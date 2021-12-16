@@ -1,8 +1,9 @@
 import React from 'react';
+import Home from './pages/home';
 import './styles/global.css';
 
 export default function App () {
   return (
-    <h1> Hello World</h1>
+    <Home/>
   )
 }
