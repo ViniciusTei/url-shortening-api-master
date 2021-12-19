@@ -5,27 +5,25 @@ import WorkingImage from "../../images/illustration-working.svg";
 import IconBrandRecognition from "../../images/icon-brand-recognition.svg";
 import IconDetailedRecords from "../../images/icon-detailed-records.svg";
 import IconFullCustomizable from "../../images/icon-fully-customizable.svg";
-import Logo from "../../images/logo.svg";
+import Header from "../components/header";
+import styles from "../styles/home.module.css";
 
 
 export default function Home() {
+
   return (
     <div>
-      <header>
-        <img src={Logo} alt="Logo" />
-
-        <button>|||</button>
-      </header>
-      <section>
-        {/* <img src={WorkingImage} alt="Person using a computer" /> */}
-        <h1>More than jusnt shorter links</h1>
+      <Header />
+      <section className={styles.section}>
+        <img src={WorkingImage} alt="Person using a computer" />
+        <h1>More than just shorter links</h1>
 
         <p>
           Build your brand's recognition and get detailed insights 
           on how your links are performing.
         </p>
 
-        <button type="button">Get Started</button>
+        <button type="button" className={styles.btn}>Get Started</button>
       </section>
       <section>
         <div>
