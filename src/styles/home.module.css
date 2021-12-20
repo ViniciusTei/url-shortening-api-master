@@ -4,9 +4,9 @@
 }
 
 .section > img {
-  width: 130%;
+  width: 100%;
   height: auto;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .section > h1 {
@@ -19,6 +19,11 @@
 .section > p {
   color: var(--neutral-gray-violet);
   line-height: 2rem;
+  padding: 1rem;
+}
+
+.container_btn {
+  margin: .5rem 0;
 }
 
 .btn {

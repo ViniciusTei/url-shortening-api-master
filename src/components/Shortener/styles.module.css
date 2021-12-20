@@ -1,0 +1,37 @@
+
+.container {
+  background: url("../../../images/bg-shorten-mobile.svg");
+  background-color: var(--primary-dark-violet);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+  width: 305px;
+  margin: 0 auto;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+}
+
+.container_input {
+  padding: .5rem 0;
+  border-radius: .5rem;
+  outline: none;
+  border: 1px solid var(--neutral-gray);
+  width: 100%;
+  max-width: 300px;
+}
+
+.container_btn {
+  width: 100%;
+  padding: .5rem;
+  background: var(--primary-cyan);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: .5rem;
+  max-width: 300px;
+}

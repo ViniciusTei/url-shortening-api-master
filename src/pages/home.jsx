@@ -7,6 +7,7 @@ import IconDetailedRecords from "../../images/icon-detailed-records.svg";
 import IconFullCustomizable from "../../images/icon-fully-customizable.svg";
 import Header from "../components/header";
 import styles from "../styles/home.module.css";
+import Shortener from "../components/Shortener";
 
 
 export default function Home() {
@@ -23,14 +24,12 @@ export default function Home() {
           on how your links are performing.
         </p>
 
-        <button type="button" className={styles.btn}>Get Started</button>
-      </section>
-      <section>
-        <div>
-          <input type="text" placeholder="Shorten a link here..."/>
-          <button>Shorten it!</button>
+        <div className={styles.container_btn}>
+          <button type="button" className={styles.btn}>Get Started</button>
+
         </div>
       </section>
+      <Shortener />
       <section>
         <article>
           <strong>Advanced Statistics</strong>
