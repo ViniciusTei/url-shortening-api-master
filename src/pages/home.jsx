@@ -2,6 +2,7 @@ import React from "react";
 
 import Footer from "../components/footer";
 import WorkingImage from "../../images/illustration-working.svg";
+import BoostMobile from "../../images/bg-boost-mobile.svg";
 import Header from "../components/header";
 import styles from "../styles/home.module.css";
 import Shortener from "../components/Shortener";
@@ -29,7 +30,8 @@ export default function Home() {
       </section>
       <Shortener />
       <Statistics />
-      <section>
+      <section className={styles.get_started}>
+        <img src={BoostMobile} alt="boost bg" />
         <strong>Boost your links today</strong>
         <button>Get Started</button>
       </section>
