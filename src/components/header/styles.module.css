@@ -3,4 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+  top: 75px;
+  left: 1rem;
+  z-index: 1000;
 }
