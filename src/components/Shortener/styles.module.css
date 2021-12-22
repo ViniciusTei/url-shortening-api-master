@@ -7,20 +7,31 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: .5rem;
+  gap: 1rem;
   width: 305px;
+  height: 140px;
   margin: 0 auto;
   border-radius: .5rem;
   padding: .5rem 1rem;
+  position: relative;
 }
 
 .container_input {
-  padding: .5rem 0;
+  padding: 1rem 0;
   border-radius: .5rem;
   outline: none;
   border: 1px solid var(--neutral-gray);
   width: 100%;
   max-width: 300px;
+  z-index: 1;
+}
+
+.container_input::placeholder {
+  font-family: Poppins;
+  color: var(--neutral-gray);
+  letter-spacing: 1px;
+  padding: 1rem;
+  font-size: .875rem;
 }
 
 .container_btn {
@@ -34,4 +45,13 @@
   font-size: 1.1rem;
   border-radius: .5rem;
   max-width: 300px;
+  z-index: 1;
+}
+
+.container > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 8px 0 0;
+  z-index: 0;
 }
