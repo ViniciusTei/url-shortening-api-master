@@ -16,17 +16,20 @@ export default function Home() {
       <Header />
       <section className={styles.section}>
         <img src={WorkingImage} alt="Person using a computer" />
-        <h1>More than just shorter links</h1>
+        <div>
+          <h1>More than just shorter links</h1>
 
-        <p>
-          Build your brand's recognition and get detailed insights 
-          on how your links are performing.
-        </p>
+          <p>
+            Build your brand's recognition and get detailed insights 
+            on how your links are performing.
+          </p>
 
-        <div className={styles.container_btn}>
-          <button type="button" className={styles.btn}>Get Started</button>
+          <div className={styles.container_btn}>
+            <button type="button" className={styles.btn}>Get Started</button>
 
+          </div>
         </div>
+        
       </section>
       <Shortener />
       <Statistics />

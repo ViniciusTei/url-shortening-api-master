@@ -11,7 +11,7 @@ export default function Statistics() {
         <strong>Advanced Statistics</strong>
         <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
       </article>
-      <article>
+      <article className={styles.card}>
         <div>
           <img src={IconBrandRecognition} alt="Icon Brand Recognition" />
 
@@ -22,7 +22,7 @@ export default function Statistics() {
           mean a thing. Branded links help instil confidence in your content.
         </p>
       </article>
-      <article>
+      <article className={styles.card}>
         <span/>
         <div>
           <img src={IconDetailedRecords} alt="Icon Detailed Records" />
@@ -34,7 +34,7 @@ export default function Statistics() {
           people engage with your content helps inform better decisions.
         </p>
       </article>
-      <article>
+      <article className={styles.card}>
         <span/>
         <div>
           <img src={IconFullCustomizable} alt="Icon Fully Customizable" />

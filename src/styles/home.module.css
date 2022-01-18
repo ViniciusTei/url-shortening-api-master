@@ -9,14 +9,14 @@
   margin-left: 2rem;
 }
 
-.section > h1 {
+.section > div > h1 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 3rem;
   color: var(--neutral-dark-blue);
 }
 
-.section > p {
+.section > div > p {
   color: var(--neutral-gray-violet);
   line-height: 2rem;
   padding: 1rem;
@@ -75,4 +75,32 @@
   padding: .7rem 1.6rem;
   text-align: center;
   border-radius: 100px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .section > div {
+    padding: 1rem .5rem;
+    margin-top: 12rem;
+    text-align: start;
+  }
+
+  .section > div > h1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+
+  .section > div > p {
+    padding-left: 0;
+  }
+
+  .section > img {
+    width: 1200px;
+
+  }
 }

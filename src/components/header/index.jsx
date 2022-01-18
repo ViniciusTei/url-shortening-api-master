@@ -13,7 +13,7 @@ export default function Header() {
   useEffect(() => {
     if (width && width > 1200) {
       setIsMobile(false)
-      setOnNavBarOpen(true)
+      setOnNavBarOpen(false)
     }
   }, [width])
   return (
@@ -24,8 +24,22 @@ export default function Header() {
         
         {onNavBarOpen && (
           <div className={styles.nav}>
-            <NavBar/>
+            <NavBar isActive={onNavBarOpen} />
           </div>
+        )}
+
+        {!isMobile && !onNavBarOpen && (
+          <nav className={styles.nav_container}>
+            <div>
+              <a href="">Features</a>
+              <a href="">Pricing</a>
+              <a href="">Resources</a>
+            </div>
+            <div>
+              <a href="">Login</a>
+              <button className={styles.signup_btn}>Sign Up</button>
+            </div>
+          </nav>
         )}
 
     </header>

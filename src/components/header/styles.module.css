@@ -13,6 +13,34 @@
   z-index: 1000;
 }
 
+.nav_container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+  height: 4rem;
+}
+
+.nav_container > div > a {
+  text-decoration: none;
+  color: var(--neutral-gray);
+  padding: 1rem;
+}
+
+.signup_btn {
+  background-color: var(--primary-cyan);
+  padding: .5rem 1.2rem;
+  border-radius: 100px;
+  color: #fff !important;
+  max-height: 45px;
+  outline: 0 !important;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 1200px) {
     .nav {
       position: inherit;

@@ -8,6 +8,13 @@
   color: #fff;
   width: 74vw;
   border-radius: 8px;
+  height: 0;
+  overflow: hidden;
+  transition: height 2s ease;
+}
+
+.active {
+  height: 411px;
 }
 
 .nav_container > ul > li {
@@ -16,7 +23,7 @@
   text-align: center;
 }
 
-.nav_container > ul > hr {
+.nav_container > ul > div {
   border-top: 0.3px solid var(--neutral-gray);
   width: 300px;
 }
@@ -27,22 +34,3 @@
   border-radius: 100px;
 }
 
-@media screen and (min-width: 1200px) {
-
-  .nav_container {
-    background-color: #fff;
-    color: var(--neutral-dark-violet);
-  }
-
-  .nav_container > ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  
-  .nav_container > ul > hr {
-    display: none;
-  }
-}
