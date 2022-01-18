@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Footer from "../components/footer";
 import WorkingImage from "../../images/illustration-working.svg";
 import BoostMobile from "../../images/bg-boost-mobile.svg";
+import BoostDesktop from "../../images/bg-boost-desktop.svg";
 import Header from "../components/header";
 import styles from "../styles/home.module.css";
 import Shortener from "../components/Shortener";
 import Statistics from "../components/StatiticsDetails";
-
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(true)
+  const window = useWindowDimensions()
 
+  useEffect(() => {
+    if(window.width >= 1200) {
+      setIsMobile(false)
+    }
+  }, [window])
   return (
     <div>
       <Header />
@@ -34,7 +42,7 @@ export default function Home() {
       <Shortener />
       <Statistics />
       <section className={styles.get_started}>
-        <img src={BoostMobile} alt="boost bg" />
+        <img src={isMobile ? BoostMobile : BoostDesktop} alt="boost bg" />
         <strong>Boost your links today</strong>
         <button>Get Started</button>
       </section>

@@ -1,5 +1,5 @@
 .section {
-  background: var(---neutral-gray-violet) !important;
+  background: #eeeeee !important;
 }
 .header {
   text-align: center;
@@ -17,7 +17,7 @@
 
 
 .header > p {
-  color: var(--neutral-gray);
+  color: var(--neutral-gray-violet);
   padding: 1rem;
   font-size: .975rem;
   line-height: 1.6rem;
@@ -68,6 +68,7 @@
 
   .header {
     margin: 4rem;
+    grid-area: head;
   }
 
   .header > strong {
@@ -82,8 +83,10 @@
 
   .section {
     display: grid;
-    grid-template: "head head head"
-                    "card card card";
+    grid: "head head head" 
+          "card1 card2 card3";
+    justify-content: space-around;
+    padding-bottom: 14rem;
   }
 
   .card > span {
@@ -94,6 +97,28 @@
     background-color: #fff;
     border-radius: 8px;
     max-width: 300px;
-    grid-area: nav;
+    max-height: 270px;
+    position: relative;
+  }
+
+  .card_1 {
+    grid-area: card1;
+  }
+
+  .card_2 {
+    grid-area: card2;
+    margin-top: 20%;
+  }
+
+  .card_3 {
+    grid-area: card3;
+    margin-top: 40%;
+  }
+
+  .section > article > div {
+    position: absolute;
+    top: -40px;
+    left: 2rem;
+    z-index: 999;
   }
 }
